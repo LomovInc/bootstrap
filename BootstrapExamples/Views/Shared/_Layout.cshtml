@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @*<link href="/Frontend/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="/Frontend/css/journal-bootstrap.min.css" rel="stylesheet" />
+    <link href="/Frontend/css/layout.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+    @RenderSection("head", false)
+</head>
+    <body>
+        
+        @RenderBody()
+
+        <script type="text/javascript" src="/Frontend/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="/Frontend/js/bootstrap.min.js"></script>
+    </body>
+</html>
