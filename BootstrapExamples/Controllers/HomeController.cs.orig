@@ -15,20 +15,12 @@ namespace BootstrapExamples.Controllers
             return View();
         }
 
-        // some code
-
-        // some more code
-
-        // second code in repo
-
-        // third code in master
 <<<<<<< HEAD
-        // first code in dev
+        // first dev commit
 
-        // second code in dev
+        // second dev commit
 =======
-
-        // fourth code in master
->>>>>>> fourth code in master
+        // first master commit
+>>>>>>> first master commit
 	}
 }
