@@ -16,8 +16,13 @@ namespace BootstrapExamples.Controllers
         }
 
         // first master commit
+<<<<<<< HEAD
         // first dev commit
 
         // second dev commit
+=======
+
+        // second master commit
+>>>>>>> second master commit
 	}
 }
