@@ -15,17 +15,5 @@ namespace BootstrapExamples.Controllers
             return View();
         }
 
-        // some code
-
-        // some more code
-
-        // second code in repo
-
-        // third code in master
-        // first code in dev
-
-
-        // fourth code in master
-        // second code in dev
 	}
 }
