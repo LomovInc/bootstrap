@@ -1,0 +1,15 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Событие";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page">
+    @Html.Partial("HeaderSection")
+    
+    <section id="body" class="container">
+        @Html.Partial("EventMainSection")
+        @Html.Partial("SidebarSection")
+    </section>
+</div>

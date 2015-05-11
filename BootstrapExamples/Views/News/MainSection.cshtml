@@ -1,0 +1,59 @@
+﻿<section id="main" class="col-md-8">
+    <div class="panel">
+        <div class="panel-heading">
+            <h2>Главная секция</h2>
+        </div>
+        <div class="panel-body">
+            <div class="well row">
+                <a href="@Url.Action("Event", new {@id = 1})" class="img-thumbnail pull-left">
+                    <img src="/Frontend/images/The_Witcher_Wild_Hunt.jpg" class="img-responsive" />
+                </a>
+                <div class="caption col-md-8">
+                    <a href="@Url.Action("Event", new {@id = 1})">Превью "The Witcher 3": впечатления от ПК-версии (перевод)</a>
+                    <p>
+                        Польская игра глазами польского же геймера, журналиста и знатока ведьмачьей Саги...
+                        Предлагаю перевод одного из лучших превью "Ведьмака 3". До определенной степени эмоциональный и,
+                        в то же время, весьма взвешенный и трезвый взгляд на игру.
+                    </p>
+                </div>
+            </div>
+            <div class="well row">
+                <a href="#" class="img-thumbnail pull-left">
+                    <img src="/Frontend/images/nosgoth_factions_w_1920_1200.jpg" class="img-responsive" />
+                </a>
+                <div class="caption col-md-8">
+                    <a href="#">Рецензия на Nosgoth. Восставшие из мёртвых</a>
+                    <p>
+                        Печальная ирония - после выхода Legacy of Kain: Defiance, в которой у погибающего мира по сюжету
+                        появилась надежда на спасение, серия на долгие годы канула в небытие. Многие считали, что история
+                        вампира Каина и похитителя душ Разиэля окончилась. Тем радостнее оказалась новость, что новая игра
+                        по этой вселенной разрабатывается и близка к завершению.
+                    </p>
+                </div>
+            </div>
+            <div class="well row">
+                <a class="img-thumbnail pull-left">
+                    <img src="/Frontend/images/heroes-of-might-magic-iii-hd-edition-pobieraj.png" class="img-responsive" />
+                </a>
+                <div class="caption col-md-8">
+                    <a href="#">Рецензия на игру «Heroes of Might & Magic III - HD Edition» </a>
+                    <p>
+                        15 лет не помеха, если есть прямые руки. А если нет?
+                    </p>
+                </div>
+            </div>
+            <div class="well row">
+                <a class="thumbnail pull-left">
+                    <img src="/Frontend/images/Resident_Evil.jpg" class="img-responsive" />
+                </a>
+                <div class="caption col-md-8">
+                    <a href="#">Прохождение игры Resident Evil Remake (HD-Remastered). Джилл: часть 4/4</a>
+                    <p>
+                        В этом номере: Убиваем Лизу, лаборатория, спасение Криса, Тиран, финал, концовки, бонусы
+                    </p>
+                </div>
+            </div>
+            @*@Html.Partial("PaginationSection")*@
+        </div>
+    </div>
+</section>

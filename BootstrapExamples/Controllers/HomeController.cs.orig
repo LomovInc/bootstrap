@@ -15,6 +15,7 @@ namespace BootstrapExamples.Controllers
             return View();
         }
 
+<<<<<<< ours
 <<<<<<< HEAD
         // first dev commit
 
@@ -22,5 +23,11 @@ namespace BootstrapExamples.Controllers
 =======
         // first master commit
 >>>>>>> first master commit
+=======
+        // first master commit
+        // first dev commit
+
+        // second master commit
+>>>>>>> theirs
 	}
 }

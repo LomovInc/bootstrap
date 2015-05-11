@@ -125,7 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -140,10 +140,13 @@
     <Content Include="Frontend\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Frontend\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Frontend\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\HeaderSection.cshtml" />
-    <Content Include="Views\Home\MainSection.cshtml" />
-    <Content Include="Views\Home\SidebarSection.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\HeaderSection.cshtml" />
+    <Content Include="Views\News\MainSection.cshtml" />
+    <Content Include="Views\News\SidebarSection.cshtml" />
+    <Content Include="Views\Shared\PaginationSection.cshtml" />
+    <Content Include="Views\News\Event.cshtml" />
+    <Content Include="Views\News\EventMainSection.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
