@@ -1,0 +1,59 @@
+﻿@using BootstrapExamples.Models
+@model int
+@{
+    var listMenu = new List<MenuItem>()
+    {
+        new MenuItem(){Text = "Новости", Url = Url.Action("Index", "News")},
+        new MenuItem(){Text = "Приложения"},
+        new MenuItem(){Text = "Рецензии", Url = Url.Action("Index", "Reviews")},
+        new MenuItem(){Text = "Сообщество"},
+        new MenuItem(){Text = "Видео"},
+        new MenuItem(){Text = "Статьи"}
+    };
+
+    var selectedMenuItem = Model;
+
+    listMenu[selectedMenuItem].Selected = true;
+}
+
+<header class="container-fluid">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="col-md-10 col-lg-push-2">
+            <div class="navbar-header">
+                <button class="btn navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    @*<span class="glyphicon glyphicon-chevron-down"></span> уголок вниз*@
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                @*<a href="." class="navbar-brand">VR</a>*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @foreach (var menuItem in listMenu)
+                    {
+                        if (menuItem.Selected)
+                        {
+                            <li class="nav active"><a href="@menuItem.Url">@menuItem.Text</a></li>
+                        }
+                        else
+                        {
+                            <li class="nav"><a href="@menuItem.Url">@menuItem.Text</a></li>
+                        }
+                    }
+                </ul>
+                <form class="navbar-form navbar-left form-inline" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Поиск..." style="display: inline-block"/>
+                            <span class="input-group-addon" style="cursor: pointer">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+

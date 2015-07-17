@@ -1,0 +1,44 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Рецензии - Вируальная реальность";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    const int selectedMenuItem = 2;
+}
+
+@section head{
+    <link rel="stylesheet" href="/Frontend/css/News/index.css" />
+}
+
+<div id="page">
+    
+    @Html.Partial("HeaderSection", selectedMenuItem)
+    
+    <div id="body" class="container">
+        <div id="main">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h2>Рецензии</h2>
+                </div>
+                
+                <div class="well row">
+                    <a href="@Url.Action("Item", new {@id = 1})" class="img-thumbnail pull-left">
+                        <img src="/Frontend/images/The_Witcher_Wild_Hunt.jpg" class="img-responsive" />
+                    </a>
+                    <div class="caption col-md-8">
+                        <a href="@Url.Action("Item", new {@id = 1})">Превью "The Witcher 3": впечатления от ПК-версии (перевод)</a>
+                        <p>
+                            Польская игра глазами польского же геймера, журналиста и знатока ведьмачьей Саги...
+                            Предлагаю перевод одного из лучших превью "Ведьмака 3". До определенной степени эмоциональный и,
+                            в то же время, весьма взвешенный и трезвый взгляд на игру.
+                        </p>
+                    </div>
+                    <div class="caption col-md-2">
+                        <h4 style="color: green">Наша оценка: 10</h4>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+</div>

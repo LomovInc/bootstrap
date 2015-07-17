@@ -126,9 +126,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -141,12 +143,14 @@
     <Content Include="Frontend\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Frontend\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\News\Index.cshtml" />
-    <Content Include="Views\News\HeaderSection.cshtml" />
+    <Content Include="Views\Shared\HeaderSection.cshtml" />
     <Content Include="Views\News\MainSection.cshtml" />
     <Content Include="Views\News\SidebarSection.cshtml" />
     <Content Include="Views\Shared\PaginationSection.cshtml" />
     <Content Include="Views\News\Event.cshtml" />
     <Content Include="Views\News\EventMainSection.cshtml" />
+    <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\Reviews\Item.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,7 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
